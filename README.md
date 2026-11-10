@@ -1,5 +1,4 @@
-# Networkwalk-B084-Week2--Penetration-Testing-Report
-# 🔐 Penetration Testing Report
+# 🔐 Networkwalk-B084-Week2--Penetration-Testing-Report
 
 ### Footprinting & Network Scanning Phases
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
@@ -643,334 +642,82 @@ All practical activities were undertaken for educational purposes within the sta
 
 The following evidence supports the activities documented in this report.
 
-> 📸 **To show screenshots on GitHub:** create an `images/` folder in your repo, upload your screenshots, and use the image lines below (they're already written for the file names shown). Remove the `<!-- -->` comment markers once the images are uploaded.
+### W2-PM5: Zenmap Network Scanning
 
-### W2-PM5 – Zenmap
+### Screenshot 1: Network Scan
+![W2-PM5 Network Scan 1](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM5%20-1.png)
 
-**Zenmap before scanning (Intense scan profile, empty target)**
-<!-- ![Zenmap start](images/w2-pm5-zenmap-start.png) -->
+### Screenshot 2: Network Scan
+![W2-PM5 Network Scan 2](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM5%20-2.png)
 
-**`ipconfig` output in Windows Command Prompt**
+### Screenshot 3: Network Scan
+![W2-PM5 Network Scan 3](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM5%20-3.png)
 
-```
-C:\Users\USER>ipconfig
+### Screenshot 4: Network Topology
+![W2-PM5 Network Topology](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM5%20-4.png)
+---
 
-Windows IP Configuration
+### W2-PM4: TheHarvester 
 
-Wireless LAN adapter Wi-Fi:
+### Screenshot 1: TheHarvester Results
+![W2-PM4 TheHarvester Results 1](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM4%20-1.png)
 
-   Link-local IPv6 Address . . . . . : fe80::1d57:d830:12fc:7ef1%15
-   IPv4 Address. . . . . . . . . . . : 172.20.10.2
-   Subnet Mask . . . . . . . . . . . : 255.255.255.240
-   Default Gateway . . . . . . . . . : 172.20.10.1
-```
-<!-- ![ipconfig](images/w2-pm5-ipconfig.png) -->
-
-**Zenmap Ping Scan results (`nmap -sn 172.20.10.0/24`)**
-
-```
-Starting Nmap 7.993 ( https://nmap.org ) at 2026-11-08 21:17 +0200
-Nmap scan report for 172.20.10.1
-Host is up (0.0060s latency).
-MAC Address: 76:9E:AF:81:6A:64 (Unknown)
-Nmap scan report for 172.20.10.13
-Host is up (0.014s latency).
-MAC Address: D0:31:69:F8:6B:8E (Samsung Electronics)
-Nmap scan report for 172.20.10.2
-Host is up.
-Nmap done: 256 IP addresses (3 hosts up) scanned in 198.59 seconds
-```
-<!-- ![Zenmap ping scan](images/w2-pm5-ping-scan.png) -->
-
-**Zenmap Topology view with legend**
-<!-- ![Zenmap topology](images/w2-pm5-topology.png) -->
+### Screenshot 2: TheHarvester Results
+![W2-PM4 TheHarvester Results 2](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM4%20-%202.png)
 
 ---
 
-### W2-PM4 – theHarvester
+### W2-PM3: Maltego – Domain Footprinting
 
-**Task 1 – Baidu search (`theHarvester -d microsoft.com -l 1000 -b baidu`)**
+### Screenshot 1: Maltego Domain Analysis
+![W2-PM3 Maltego Domain Analysis 1](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM3%20-%201.png)
 
-```
-[*] Target: microsoft.com
-[*] Searching Baidu.
-[*] No IPs found.
-[*] Emails found: 3
-----------------------
-azure-noreply@microsoft.com
-azureemail-noreply@microsoft.com
-opencode@microsoft.com
-```
-<!-- ![theHarvester Baidu](images/w2-pm4-baidu.png) -->
-
-**Task 2 – All sources (`theHarvester -d microsoft.com -l 50 -b all`)**
-<!-- ![theHarvester all sources](images/w2-pm4-all.png) -->
-
+### Screenshot 2: Maltego Graph Results
+![W2-PM3 Maltego Graph Results 2](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM3%20-2.png)
 ---
 
-### W2-PM3 – Maltego
+### W2-PM2: Google Hacking Database (GHDB) 
 
-**Domain entity `networkwalks.com` with email transform result (`info@networkwalks.com`)**
-<!-- ![Maltego graph 1](images/w2-pm3-graph-1.png) -->
-<!-- ![Maltego graph 2](images/w2-pm3-graph-2.png) -->
+### Screenshot 1: Google Dorking Results
+![W2-PM2 Screenshot 1](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-1.png)
 
----
+### Screenshot 2: Indexed Camera Interfaces
+![W2-PM2 Screenshot 2](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-2.png)
 
-### W2-PM2 – Google Hacking Database (GHDB)
+### Screenshot 3: Camera Search Results
+![W2-PM2 Screenshot 3](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-3.png)
 
-#### Task 1: Find 10x live security camera links exposed & accessible from the Internet
+### Screenshot 4: Publicly Indexed Resources
+![W2-PM2 Screenshot 4](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-4.png)
 
-<table>
-<thead>
-<tr>
-<th align="center">No.</th>
-<th align="left">Link</th>
-<th align="left">Relevant Dork</th>
-<th align="left">Username / Password (if any)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="left">http://109.233.191.130:8080/</td>
-<td align="left"><code>intitle:"webcamXP" inurl:8080</code></td>
-<td align="left">---</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="left">http://217.73.188.74:82/</td>
-<td align="left"><code>intitle:"NoVus IP camera" -com</code></td>
-<td align="left">Username: root</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="left">http://198.41.49.97:81/</td>
-<td align="left"><code>intitle:"Device(IP CAMERA)" "language" -com|net</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="left">http://153.156.0.199/CAM/2023/03/</td>
-<td align="left"><code>intitle:"Index of /cam/"</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="left">http://202.153.140.18:8106/</td>
-<td align="left"><code>intitle:"IP CAMERA" "User Login" "User Name" "Password" "Preview Stream"</code></td>
-<td align="left">Username: admin</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="left">http://109.206.96.249:8080/</td>
-<td align="left"><code>inurl:/multi.html intitle:webcam</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="left">http://36.91.109.94/</td>
-<td align="left"><code>intitle:"Cambium" inurl:top.cgi</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="left">http://72.199.200.5:8080/</td>
-<td align="left"><code>intitle:"webcamxp" "Flash JPEG Stream"</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="left">http://78.187.173.59:85/</td>
-<td align="left"><code>intitle:"HD IP Camera" "Remember me" "User name" -.com -pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">10</td>
-<td align="left">http://176.62.180.41:7777/</td>
-<td align="left"><code>intitle:"ContaCam" "Snapshot Image"</code></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
+### Screenshot 5: Open Directory Listings
+![W2-PM2 Screenshot 5](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-5.png)
 
+### Screenshot 6: Indexed PDF Documents
+![W2-PM2 Screenshot 6](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-6.png)
 
-**Google Hacking Database – search keyword `cam`**
-<!-- ![GHDB cam search](images/w2-pm2-ghdb.png) -->
+### Screenshot 7: Additional Search Evidence
+![W2-PM2 Screenshot 7](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM2%20-7.png)
 
-**Google search: `inurl:/multi.html intitle:webcam`**
-<!-- ![Google dork search](images/w2-pm2-google-search.png) -->
+### W2-PM1: Website Footprinting and Information Gathering
 
-**Example publicly indexed webcam page**
-<!-- ![Webcam example](images/w2-pm2-webcam.png) -->
+### Screenshot 1: WHOIS Domain Information
+![W2-PM1 WHOIS Results](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM1%20-1.png)
 
-#### Task 2: Find 10x listings which contain downloadable mathematics ebooks in PDF format
+### Screenshot 2: WhatWeb Technology Identification
+![W2-PM1 WhatWeb Results](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM1%20-2.png)
 
-Dork used for all entries: `intitle:index.of "parent directory" mathematics pdf`
+### Screenshot 3: DNS Lookup Results
+![W2-PM1 DNS Lookup](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM1%20-3.png)
 
-<table>
-<thead>
-<tr>
-<th align="center">No.</th>
-<th align="left">Link</th>
-<th align="left">Relevant Dork</th>
-<th align="left">Username / Password (if any)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="left">https://www.skylineuniversity.ac.ae/pdf/math/</td>
-<td align="left"><code>intitle:index.of "parent directory"</code></td>
-<td align="left">---</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="left">https://puspitarahayuari.wordpress.com/wp-content/uploads/2014/12/dictionary-of-mathematical-terms.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="left">http://www.bio-nica.info/biblioteca/anonimoencyclopediamath1549-2148.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="left">https://www.stbrn.ac.uk/upload/MATHEMATICSDIRECTORY.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="left">https://www.curriculumonline.ie/getmedia/00c7dd32-e75b-43ff-810f-706a45633cd8/PMC_Toolkit_DirectoryENG.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="left">https://www.alnasiry.net/Book-Exa/Handbook%20of%20Mathematics.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="left">https://files.eric.ed.gov/fulltext/ED248344.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="left">https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/res/references.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="left">https://www.academia.edu/9437478/Users_Guide_to_Mathematics</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">10</td>
-<td align="left">https://www.ulm.edu.pk/departments/admin/upload/downloads/202110030921.pdf</td>
-<td align="left"><code>intitle:index.of "parent directory" mathematics pdf</code></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
+### Screenshot 4: HTTP Header Analysis
+![W2-PM1 HTTP Headers](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM1%20-4.png)
 
+### Screenshot 5: Web Application Firewall Detection
+![W2-PM1 WAF Detection](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM1%20-5.png)
 
----
-
-### W2-PM1 – Multiple Kali Tools
-
-**1. WHOIS (`whois networkwalks.com`)**
-
-```
-Domain Name: NETWORKWALKS.COM
-Registry Domain ID: 2452319255_DOMAIN_COM-VRSN
-Registrar WHOIS Server: whois.godaddy.com
-Registrar URL: http://www.godaddy.com
-Updated Date: 2025-11-12T10:08:43Z
-Creation Date: 2019-11-06T22:51:46Z
-Registry Expiry Date: 2027-11-06T22:51:46Z
-Registrar: GoDaddy.com, LLC
-Registrar IANA ID: 146
-Registrar Abuse Contact Email: abuse@godaddy.com
-Registrar Abuse Contact Phone: 480-624-2505
-Domain Status: clientDeleteProhibited
-Domain Status: clientRenewProhibited
-Domain Status: clientTransferProhibited
-Domain Status: clientUpdateProhibited
-Name Server: NS6135.HOSTGATOR.COM
-Name Server: NS6136.HOSTGATOR.COM
-DNSSEC: unsigned
-```
-
-**2. WhatWeb (`whatweb networkwalks.com`)**
-
-```
-https://networkwalks.com [200 OK] Apache, Bootstrap[7.1.4], Cookies[__wpdm_client],
-Country[UNITED STATES][US], Email[info@networkwalks.com], Frame, Google-Tag-Manager,
-HTML5, HTTPServer[Apache], HttpOnly[__wpdm_client], IP[192.232.216.135],
-JQuery[3.7.1], MetaGenerator[WordPress 7.1.4,WordPress Download Manager 3.3.76],
-Open-Graph-Protocol[website], Title[Networkwalks Academy], WordPress[7.1.4]
-```
-
-**3. NSLookup (`nslookup networkwalks.com`)**
-
-```
-Server:         172.20.10.1
-Address:        172.20.10.1#53
-
-Non-authoritative answer:
-Name:   networkwalks.com
-Address: 192.232.216.135
-```
-
-**4. cURL (`curl -I https://networkwalks.com`)**
-
-```
-HTTP/2 200
-link: <https://networkwalks.com/wp-json/>; rel="https://api.w.org/",
-      <https://networkwalks.com/wp-json/wp/v2/pages/53>; rel="alternate"; title="JSON"; type="application/json",
-      <https://networkwalks.com/>; rel=shortlink
-set-cookie: __wpdm_client=...; path=/; domain=networkwalks.com; secure; HttpOnly
-referrer-policy: no-referrer-when-downgrade
-x-endurance-cache-level: 0
-x-nginx-cache: WordPress
-content-type: text/html; charset=UTF-8
-date: Mon, 09 Nov 2026 19:26:36 GMT
-server: Apache
-```
-
-**5. WAFW00F (`wafw00f networkwalks.com`)**
-
-```
-~ WAFW00F : v2.4.2 ~
-The Web Application Firewall Fingerprinting Toolkit
-
-[*] Checking https://networkwalks.com
-[+] The site https://networkwalks.com is behind ModSecurity (SpiderLabs) WAF.
-[~] Number of requests: 2
-```
-
-**6. DNSRecon (`dnsrecon -d networkwalks.com`)**
-
-```
-INFO Starting enumeration for domain: networkwalks.com
-INFO std: Performing General Enumeration against: networkwalks.com...
-ERROR No answer for DNSSEC query for networkwalks.com
-INFO   SOA ns6135.hostgator.com 50.87.144.87
-INFO   NS ns6135.hostgator.com 50.87.144.87
-INFO   NS ns6136.hostgator.com 192.232.216.131
-INFO   MX mail.networkwalks.com 192.232.216.135
-INFO   A networkwalks.com 192.232.216.135
-INFO Enumerating SRV Records
-ERROR No SRV Records Found for networkwalks.com
-INFO Completed enumeration for domain: networkwalks.com
-```
+### Screenshot 6: DNS Enumeration
+![W2-PM1 DNS Enumeration](https://raw.githubusercontent.com/KelvinKayamba/Networkwalk-B084-Week2--Penetration-Testing-Report/main/W2-PM1%20-6.png)
 
 ---
 
